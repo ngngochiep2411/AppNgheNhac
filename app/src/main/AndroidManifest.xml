@@ -3,6 +3,7 @@
     package="com.example.appnghenhac">
 
     <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
     <application
         android:name=".ApplicationClass"
         android:hardwareAccelerated="false"
@@ -22,6 +23,15 @@
         </activity>
 
         <service android:name=".MusicService"  android:enabled="true"/>
+        <receiver android:name=".NotificationReceiver" android:enabled="true">
+            <intent-filter>
+                <action android:name="actionprevious"/>
+                <action android:name="actionnext"/>
+                <action android:name="actionplay"/>
+
+
+            </intent-filter>
+        </receiver>
     </application>
 
 </manifest>
