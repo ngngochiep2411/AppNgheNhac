@@ -19,6 +19,7 @@ import android.support.v4.media.session.MediaSessionCompat;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.SeekBar;
 import android.widget.TextView;
@@ -52,6 +53,8 @@ public class PlayMusicActivity extends AppCompatActivity implements ActionPlayin
     static  boolean playRandom=false ;
     static boolean rePlay=false;
     MusicService musicService;
+    FrameLayout frag_bottom_player;
+    
 
 
 
